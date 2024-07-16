@@ -71,7 +71,7 @@ fig, axes = plt.subplots(1, 3, figsize=(18, 5))
 axes[0].contourf(X, Y, Z, levels=50, cmap='viridis')
 axes[0].scatter(history_positions[0][:, 0], history_positions[0][:, 1], color='red')
 axes[0].set_title('Iteración Inicial')
-
+print("Cantidad de iteraciones: ", len(history_positions))
 # Gráfica de un punto medio
 mid_point = len(history_positions) // 2
 axes[1].contourf(X, Y, Z, levels=50, cmap='viridis')
